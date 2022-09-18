@@ -1,0 +1,125 @@
+.modal-background{
+    position: fixed;
+    background: rgba(132, 136, 146, 0.6);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; 
+    display: none;
+    z-index: 2;
+}
+.modal-window{
+    position: fixed;
+    max-width: 509px;
+    border-radius: 8px;
+    padding: 45px;
+    background: #FFFFFF;
+    opacity: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal-flex{
+    display: flex;
+    justify-content: space-between;
+}
+.modal-title{
+    font-family: Mont;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    color: #172342;  
+    padding-bottom: 10px;
+}
+.modal-text{
+    font-family: Mont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 152%;
+    color: #172342;
+    padding-bottom: 50px;
+}
+form > label{
+    position: absolute;
+    margin: 7px 25px;
+    font-family: Mont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 152%;
+    color: #4E5679;   
+}
+.modal-form{
+    width: 420px;
+}
+.modal-input{
+    display: block;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 100%;
+    height: 60px;
+    padding: 20px 0 0 23px;
+    margin-bottom: 30px;
+}
+.modal-input::placeholder{
+    font-family: Mont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 152%;
+    color: #080F2F;
+}
+.modal-input:focus{
+    border: 3px solid #FECF56;
+    outline: none;
+}
+.button-modal{
+    background: #FECF56;
+    border-radius: 4px;
+    width: 100%;
+    height: 60px;
+    border: 3px solid #FFFFFF;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 152%;
+    color: #172342;
+}
+.button-modal > div{
+    margin-right: 25px;
+}
+.button-modal:hover{
+    box-shadow: 0px 19px 50px -4px rgba(254, 207, 86, 0.35);
+    transition: 0.1s;
+    background: #FFFFFF;
+    border: 3px solid #FECF56;}
+@media (max-width: 550px){
+    .modal-window{
+        max-width: 400px;
+    }
+    .modal-form{
+        width: 300px;
+    }
+}
+@media (max-width: 480px){
+    .modal-window{
+        max-width: 300px;
+        padding: 25px;
+    }
+    .modal-form{
+        width: 200px;
+    }
+    .modal-text{
+        padding-bottom: 30px;
+    }
+    .modal-input{
+        margin-bottom: 15px;
+    }
+}
